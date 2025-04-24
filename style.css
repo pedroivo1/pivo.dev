@@ -1,0 +1,15 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+}
+
+section#sobre,
+section#projetos,
+section#plano {
+  min-height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+}
