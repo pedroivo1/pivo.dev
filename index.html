@@ -4,8 +4,15 @@
     <meta charset="UTF-8" />
     <title>pivo.dev</title>
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
+
+    <meta name="author" content="Pedro Ivo A. Lima" />
+    <meta
+      name="description"
+      content="Uma landing page onde coloco os links para todos os meus sites e redes sociais."
+    />
+
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
 
   <body>
@@ -23,7 +30,7 @@
 
     <main>
       <section id="sobre">
-        <h2>Sobre Mim</h2>
+        <h2><a href="#sobre">Sobre Mim</a></h2>
         <p>
           Olá, meu nome é Pedro Ivo, tenho 22 anos e estou fazendo o 2º semestre
           de
@@ -32,10 +39,13 @@
             target="_blank"
             >ciência da computação</a
           >
-          na <a href="https://uvv.br" target="_blank">UVV</a>. Gosto muito de
-          esportes; pratico basquete, escalada e "ciclismo" (apenas ando de bike
-          na praia kkkkk). Mas para assistir gosto de tudo; desde UFC e sumô até
-          vôlei e ping pong.
+          na
+          <abbr title="Universidade Vila Velha"
+            ><a href="https://uvv.br" target="_blank">UVV</a></abbr
+          >. Gosto muito de esportes; pratico basquete, escalada e "ciclismo"
+          (apenas ando de bike na praia kkkkk). Mas para assistir gosto de tudo;
+          desde <abbr title="Ultimate Fighting Championship">UFC</abbr> e sumô
+          até vôlei e ping pong.
         </p>
         <p>
           Neste semestre, estou estudando bastante matemática, pois quero ter
@@ -46,7 +56,7 @@
       </section>
 
       <section id="projetos">
-        <h2>Projetos</h2>
+        <h2><a href="#projetos">Projetos</a></h2>
         <ul>
           <li><a href="#">Projeto 1</a>: Descrição breve do projeto.</li>
           <li><a href="#">Projeto 2</a>: Descrição breve do projeto.</li>
@@ -56,7 +66,7 @@
       </section>
 
       <section id="plano">
-        <h2>Plano Profissional</h2>
+        <h2><a href="#plano">Plano Profissional</a></h2>
         <p>
           Busco um estágio na área da programação, quero trabalhar programando,
           consertar bugs, e aprendendo com meus colegas de trabalho tudo que
@@ -67,14 +77,26 @@
 
     <footer>
       <p>
-        &copy; 2025 Pivo. Todos os direitos reservados. Estou de olho 🧐 (brinks
-        😄)
+        &copy; 2025 Pivo. Todos os direitos reservados.
+        <small>Estou de olho 🧐 (brinks 😄)</small>
       </p>
-      <section id="contatos">
+      <address id="contatos">
         <p>Contatos:</p>
-        <a href="mailto:pedroivoal1@gmail.com">gmail</a>
-        <a href="mailto:pedro.ivo@uvvnet.com.br">outlook</a>
-      </section>
+        <ul>
+          <li>
+            gmail:
+            <a href="mailto:pedroivoal1@gmail.com">pedroivoal1@gmail.com</a>
+          </li>
+          <li>
+            outlook:
+            <a href="mailto:pedro.ivo@uvvnet.com.br">pedro.ivo@uvvnet.com.br</a>
+          </li>
+          <li>
+            <abbr title="telefone">tel.</abbr>:
+            <a href="tel:+5511984744949">11 98474-4949</a>
+          </li>
+        </ul>
+      </address>
     </footer>
   </body>
 </html>
