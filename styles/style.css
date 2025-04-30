@@ -1,64 +1,47 @@
 html {
   scroll-behavior: smooth;
+  font: 1.125rem "Iceland", sans-serif;
   background-color: #cfe8fd;
-  font-family: "Iceland", sans-serif;
-  font-weight: 400;
-  font-size: 1.1rem;
 }
 
 body {
+  background-color: #ffffff;
   min-height: 100vh;
   max-width: 50rem;
-  margin: 0 auto;
-  background-color: #ffffff;
   padding: 0 1.25rem 1.25rem 1.25rem;
+  margin: 0 auto;
 }
 
 h1 {
-  > a {
+  & > a {
     text-decoration: none;
     color: black;
-
-    &:visited {
-      color: black;
-    }
+    &:visited {color: black;}
   }
 }
 
-h2,
-h3,
-h4 {
-  font-family: "Audiowide", cursive;
-
-  > a {
-    text-decoration: underline solid 0.125rem;
+h2, h3, h4 {
+  font-family: "Audiowide", sans-serif;
+  & > a {
+    text-decoration: none;
     color: black;
-
-    &:visited {
-      color: black;
-    }
+    &:visited {color: black;}
+    &:hover {text-decoration: underline solid 0.125rem;}
   }
 }
 
 nav {
-  > ul {
+  & > ul {
     padding: 0;
     margin: 0;
-
-    > li {
+    & > li {
       list-style-type: none;
-
-      > a {
+      & > a {
         text-decoration: none;
         padding: 0.1rem 0.2rem;
-        border-radius: 0.2rem;
-
-        &:visited {
-          color: inherit;
-        }
-        &:hover {
-          background-color: #83c7ff6d;
-        }
+        border-radius: 0.313rem;
+        &:visited {color: inherit;}
+        &:hover {background-color: #83c7ff6d;}
       }
     }
   }
@@ -72,11 +55,8 @@ figure {
   display: inline-block;
   border: 0.062rem solid black;
   width: 12rem;
-
-  > img {
-    width: 100%;
-  }
-  > figcaption {
+  & > img {width: 100%;}
+  & > figcaption {
     font-size: 0.7rem;
     padding-left: 0.2rem;
     background-color: rgba(127, 127, 127, 0.3);
@@ -85,22 +65,11 @@ figure {
 
 a {
   text-decoration: underline solid 0.063rem;
-
-  &:link {
-    color: inherit;
-  }
-  &:visited {
-    color: #551a8b;
-  }
-  &:focus {
-    color: blue;
-  }
-  &:hover {
-    text-decoration: none;
-  }
-  &:active {
-    color: red;
-  }
+  &:link {color: #007ed4;}
+  &:visited {color: #551a8b;}
+  &:focus {color: blue;}
+  &:hover {text-decoration: none;}
+  &:active {color: red;}
   &[target="_blank"]::after {
     content: "";
     display: inline-block;
