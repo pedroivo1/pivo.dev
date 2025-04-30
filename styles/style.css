@@ -44,6 +44,8 @@ nav ul li {
 a {
   text-decoration: underline;
   text-decoration-thickness: 0.063rem;
+  padding: 0.1rem 0.2rem;
+  border-radius: 0.2rem;
 }
 
 h1 a,
@@ -65,6 +67,31 @@ a:hover {
   text-decoration: none;
 }
 
+a[target="_blank"]::after {
+  content: "";
+  display: inline-block;
+  width: 0.75em;
+  height: 0.75em;
+  margin-left: 0.1em;
+  background-image: url('/images/svg/external-link.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
 p {
   margin: 0.625rem;
+}
+
+.nav-a {
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.nav-a:visited {
+  color: inherit;
+}
+
+.nav-a:hover {
+  background-color: #83c7ff6d;
 }
