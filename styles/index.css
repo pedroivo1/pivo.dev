@@ -1,22 +1,8 @@
-section#sobre,
-section#projetos,
-section#plano {
-  min-height: 100vh;
-  padding: 2rem;
-  box-sizing: border-box;
-}
-
-#minha-foto  {
-  display: inline-block;
-  border: 0.062rem solid black;
-}
-
-#minha-foto img {
-  width: 12rem;
-}
-
-#minha-foto figcaption {
-  width: 12rem;
-  padding: 0.2rem;
-  background-color: rgba(255, 255, 255, 0.85);
+section {
+  &#sobre,
+  &#projetos,
+  &#plano {
+    min-height: 100vh;
+    padding: 2rem;
+  }
 }

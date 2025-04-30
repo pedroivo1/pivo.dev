@@ -1,14 +1,19 @@
 /* font: https://www.joshwcomeau.com/css/custom-css-reset */
 
-/* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
+/* mundaça seguindo: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+html {
   box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 /* 2. Remove default margin */
 * {
   margin: 0;
 }
+/* mundaça */
 
 /* 3. Enable keyword animations */
 @media (prefers-reduced-motion: no-preference) {
@@ -48,9 +53,7 @@ h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
 
-/*
-  10. Create a root stacking context
-*/
+/* 10. Create a root stacking context */
 #root, #__next {
   isolation: isolate;
 }
