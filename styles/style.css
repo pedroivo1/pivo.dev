@@ -67,11 +67,11 @@ a {
   text-decoration: underline solid 0.063rem;
   &:link {color: #007ed4;}
   &:visited {color: #551a8b;}
-  &:focus {color: blue;}
+  &:focus {color: green;}
   &:hover {text-decoration: none;}
   &:active {color: red;}
   &[target="_blank"]::after {
-    content: "";
+    content: "\00a0"; /* Espaço não separável para o pseudo-elemento renderizar */
     display: inline-block;
     width: 0.75em;
     height: 0.75em;
