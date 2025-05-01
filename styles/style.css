@@ -1,6 +1,6 @@
 html {
   scroll-behavior: smooth;
-  font: 1.125rem "Iceland", sans-serif;
+  font: 16px "Anta", sans-serif;
   background-color: #cfe8fd;
 }
 
@@ -13,6 +13,7 @@ body {
 }
 
 h1 {
+  font: "Iceland", sans-serif;
   & > a {
     text-decoration: none;
     color: black;
@@ -24,7 +25,7 @@ h1 {
 }
 
 h2, h3, h4 {
-  font-family: "Audiowide", sans-serif;
+  font: "Audiowide", sans-serif;
   & > a {
     text-decoration: none;
     color: black;
@@ -56,23 +57,26 @@ nav {
 }
 
 p {
-  margin: 0.625rem;
+  margin-bottom: 1.25rlh;
 }
 
 figure {
   display: inline-block;
-  border: 0.062rem solid black;
+  border: 0.0625rem solid black;
   width: 12rem;
-  & > img {width: 100%;}
+  & > img {
+    width: 100%;
+    height: auto;
+  }
   & > figcaption {
     font-size: 0.7rem;
     padding-left: 0.2rem;
-    background-color: rgba(127, 127, 127, 0.3);
+    background-color: rgba(200, 200, 200, 0.3);
   }
 }
 
 a {
-  text-decoration: underline solid 0.063rem;
+  text-decoration: underline solid 0.0625rem;
   color: #007ed4;
   &:visited {color: #551a8b;}
   &:focus {color: green;}
@@ -83,8 +87,7 @@ a {
     display: inline-block;
     width: 0.75em;
     height: 0.75em;
-    margin-left: 0.1em;
-    /* SVG convertido para Data URI */
+    margin-inline-start: 0.0625rem;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0%20-960%20960%20960' width='24px' fill='%231f1f1f'%3E%3Cpath d='M200-120q-33%200-56.5-23.5T120-200v-560q0-33%2023.5-56.5T200-840h280v80H200v560h560v-280h80v280q0%2033-23.5%2056.5T760-120H200Zm188-212-56-56%20372-372H560v-80h280v280h-80v-144L388-332Z'/%3E%3C/svg%3E");
     background-size: contain;
     background-repeat: no-repeat;

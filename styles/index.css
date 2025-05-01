@@ -3,6 +3,10 @@ section {
   &#projetos,
   &#plano {
     min-height: 100vh;
-    padding: 2rem;
+    margin: 1rem 0;
   }
+}
+
+.nota {
+  margin-bottom: 0;
 }
