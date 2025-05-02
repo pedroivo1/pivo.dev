@@ -2,7 +2,7 @@
   /* --text-color: hsl(0 0% 5%); */
   --text-color: hsl(0 0% 95%);
   /* --background-color: hsl(0 0% 95%) */
-  --background-color: hsl(0 0% 14% / 0.7)
+  --background-color: hsl(0 0% 14% / 0.7);
 }
 
 html {
@@ -10,14 +10,7 @@ html {
   align-items: center;
   min-height: 100vh;
   font: 16px "Anta", sans-serif;
-  background: conic-gradient(
-    hsl(345, 100%, 50%),
-    hsl(345, 100%, 20%),
-    hsl(345, 100%, 10%),
-    hsl(345, 100%, 20%),
-    hsl(345, 100%, 50%),
-    hsl(345, 100%, 60%),
-    hsl(345, 100%, 50%));
+  background: linear-gradient(120deg, hsl(345 100% 60%), hsl(345 100% 10%));
 }
 
 body {
@@ -28,7 +21,7 @@ body {
   min-height: 90vh;
   border-radius: 1rem;
   background-color: var(--background-color);
-  box-shadow: 1rem 0.8rem 0.5rem rgba(0, 0, 0, 0.551);
+  box-shadow: 1rem 0.8rem 0.5rem hsl(345 90% 0% / 0.5);
 }
 
 header {
@@ -50,11 +43,13 @@ nav {
   > ul {
     display: flex;
     margin: 2px 0;
-    & > li {margin: 0 .5rem;}
+    & > li {
+      margin: 0 0.5rem;
+    }
   }
 }
 
-section{
+section {
   padding: 1.25rem;
   margin: 0 2rem;
 }
@@ -64,23 +59,41 @@ h1 {
   & > a {
     text-decoration: none;
     color: var(--text-color);
-    &:visited {color: var(--text-color);}
-    &:focus {color: var(--text-color);}
-    &:hover {text-decoration: none;}
-    &:active {color: var(--text-color);}
+    &:visited {
+      color: var(--text-color);
+    }
+    &:focus {
+      color: var(--text-color);
+    }
+    &:hover {
+      text-decoration: none;
+    }
+    &:active {
+      color: var(--text-color);
+    }
   }
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   font-family: "Audiowide", sans-serif;
   color: var(--text-color);
   & > a {
     text-decoration: none;
     color: var(--text-color);
-    &:visited {color: var(--text-color);}
-    &:focus {color: var(--text-color);}
-    &:hover {text-decoration: underline solid 0.125rem;}
-    &:active {color: var(--text-color);}
+    &:visited {
+      color: var(--text-color);
+    }
+    &:focus {
+      color: var(--text-color);
+    }
+    &:hover {
+      text-decoration: underline solid 0.125rem;
+    }
+    &:active {
+      color: var(--text-color);
+    }
   }
 }
 
@@ -92,16 +105,21 @@ nav {
       list-style-type: none;
       & > a {
         text-decoration: none;
-        padding: 0.1rem 0.2rem;
+        padding: 0.2rem 0.35rem;
         color: var(--text-color);
         border-radius: 0.313rem;
-        &:visited {color: var(--text-color);}
-        &:focus {color: var(--text-color);}
-        &:hover {
-          background-color: hsl(345 90% 50% / 0.8);
-          color: #ffffff;
+        &:visited {
+          color: var(--text-color);
         }
-        &:active {color: var(--text-color);}
+        &:focus {
+          color: var(--text-color);
+        }
+        &:hover {
+          background-color: hsl(345 100% 60% / 0.7);
+        }
+        &:active {
+          color: var(--text-color);
+        }
       }
     }
   }
@@ -123,10 +141,18 @@ img {
 a {
   text-decoration: underline solid 0.0625rem;
   color: #007ed4;
-  &:visited {color: #a155e8;}
-  &:focus {color: green;}
-  &:hover {text-decoration: none;}
-  &:active {color: red;}
+  &:visited {
+    color: #a155e8;
+  }
+  &:focus {
+    color: green;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+  &:active {
+    color: red;
+  }
   &[target="_blank"]::after {
     content: "\00a0";
     display: inline-block;
@@ -140,4 +166,6 @@ a {
   }
 }
 
-li {color: var(--text-color);}
+li {
+  color: var(--text-color);
+}
