@@ -28,7 +28,7 @@ body {
     var(--background-color-1),
     var(--background-color-2)
   );
-  box-shadow: 0.0625rem 0.0625rem 0.5rem 0.0625rem hsl(345 100% 0%);
+  box-shadow: 0.0625rem 0.0625rem 0.3125rem 0.0625rem hsl(345 100% 0%);
 }
 
 header {
@@ -167,6 +167,9 @@ img {
   height: auto;
   border-radius: 50%;
   margin: 0 5rem;
+  background-color: hsl(345, 100%, 34%);
+  background-color: hsl(345, 53%, 15%);
+  box-shadow: 0.0625rem 0.0625rem 0.3125rem 0.0625rem hsl(345 100% 0%);
 }
 
 a {
@@ -236,5 +239,9 @@ li {
   img {
     float: unset;
     margin: 0 auto;
+  }
+
+  abbr {
+    text-decoration: none;
   }
 }
