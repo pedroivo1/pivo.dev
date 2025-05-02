@@ -10,7 +10,6 @@ html {
   align-items: center;
   min-height: 100vh;
   font: 16px "Anta", sans-serif;
-  /* background: conic-gradient(hsl(345, 90%, 37%), hsl(345, 90%, 25%), hsl(345, 90%, 15%), hsl(345, 90%, 30%), hsl(345, 70%, 50%), hsl(345, 90%, 37%), hsl(345, 90%, 37%)); */
   background: conic-gradient(hsl(345, 90%, 37%), hsl(345, 90%, 25%), hsl(345, 90%, 15%), hsl(345, 90%, 30%), hsl(345, 70%, 50%), hsl(345, 90%, 37%), hsl(345, 90%, 37%));
 }
 
@@ -21,7 +20,6 @@ body {
   width: 90vw;
   border-radius: 1rem;
   background-color: var(--background-color);
-  /* background-color: hsl(0 0% 14%); */
   margin: 0 auto;
 }
 
@@ -96,7 +94,6 @@ nav {
         &:hover {
           background-color: hsl(345 90% 50% / 0.8);
           color: #ffffff;
-          /* border: 0.0625rem solid #000; */
         }
         &:active {color: var(--text-color);}
       }
