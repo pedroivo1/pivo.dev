@@ -231,5 +231,6 @@ li {
 
   img {
     float: unset;
+    margin: 0 auto;
   }
 }
