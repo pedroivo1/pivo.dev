@@ -2,7 +2,7 @@
   /* --text-color: hsl(0 0% 5%); */
   --text-color: hsl(0 0% 95%);
   /* --background-color: hsl(0 0% 95%) */
-  --background-color: hsl(0 0% 14%)
+  --background-color: hsl(0 0% 14% / 0.7)
 }
 
 html {
@@ -28,6 +28,7 @@ body {
   min-height: 90vh;
   border-radius: 1rem;
   background-color: var(--background-color);
+  box-shadow: 1rem 0.8rem 0.5rem rgba(0, 0, 0, 0.551);
 }
 
 header {
