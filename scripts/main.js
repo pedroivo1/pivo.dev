@@ -18,4 +18,3 @@ navLinks.forEach(link => {
     }
   });
 });
-document.getElementById('sobre').removeAttribute('hidden');
