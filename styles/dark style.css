@@ -1,0 +1,17 @@
+html {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  font: 16px "Anta", sans-serif;
+  background: conic-gradient(hsl(345, 90%, 37%), hsl(345, 90%, 25%), hsl(345, 90%, 15%), hsl(345, 90%, 30%), hsl(345, 70%, 50%), hsl(345, 90%, 37%), hsl(345, 90%, 37%));
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  width: 90vw;
+  border-radius: 1rem;
+  background-color: hsl(0 0% 95%);
+  margin: 0 auto;
+}

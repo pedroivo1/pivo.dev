@@ -26,6 +26,9 @@
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/index.css" />
+
+    <!-- SCRIPTS -->
+    <script src="scripts/main.js" defer></script>
   </head>
 
   <body>
@@ -43,20 +46,11 @@
 
     <main>
       <section id="sobre">
-        <h2><a href="#sobre">Sobre Mim</a></h2>
-        <figure>
-          <img
-            src="images/Pedro-Ivo.jpg"
-            alt="Homem branco jovem de camisa amarela."
-            width="214.400"
-            height="228.012"
-          />
-          <figcaption>
-            12/12/2020 - evento de final de ano do
-            <a href="https://www.institutoponte.org.br" target="_blank">IP</a>
-            (Instituto Ponte).
-          </figcaption>
-        </figure>
+        <h2>Sobre Mim</h2>
+        <img
+          src="images/Pedro-Ivo.jpg"
+          alt="Homem branco jovem de camisa amarela."
+        />
         <p>
           Olá, meu nome é Pedro Ivo, tenho 22 anos e estou fazendo o 2º semestre
           de
@@ -81,8 +75,8 @@
         </p>
       </section>
 
-      <section id="projetos">
-        <h2><a href="#projetos">Projetos</a></h2>
+      <section id="projetos" hidden>
+        <h2>Projetos</h2>
         <ul>
           <li><a href="#">Projeto 1</a>: Descrição breve do projeto.</li>
           <li><a href="#">Projeto 2</a>: Descrição breve do projeto.</li>
@@ -91,8 +85,8 @@
         </ul>
       </section>
 
-      <section id="plano">
-        <h2><a href="#plano">Plano Profissional</a></h2>
+      <section id="plano" hidden>
+        <h2>Plano Profissional</h2>
         <p>
           Busco um estágio na área da programação, quero trabalhar programando,
           consertar bugs, e aprendendo com meus colegas de trabalho tudo que
@@ -101,7 +95,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer hidden>
       <address id="contatos">
         <p>Contatos:</p>
         <ul>
