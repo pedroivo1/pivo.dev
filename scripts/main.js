@@ -8,8 +8,10 @@ navLinks.forEach(link => {
       section.setAttribute('hidden', 'true');
     });
     navLinks.forEach(link => {
-      link.classList.toggle('on');
+      link.classList.remove('on');
     });
+    this.classList.add('on');
+    
 
     const targetSection = document.getElementById(targetId);
     if (targetSection) {
