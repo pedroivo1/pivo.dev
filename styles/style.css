@@ -14,7 +14,7 @@ html {
   align-items: center;
   min-height: 100vh;
   font: 16px "Anta", sans-serif;
-  background: linear-gradient(135deg, hsl(347 100% 50%), hsl(347 100% 25%));
+  background: linear-gradient(225deg, hsl(347 100% 20%), hsl(347 100% 10%));
 }
 
 body {
@@ -86,37 +86,17 @@ nav > ul > li > a:focus {
 
 nav > ul > li > a:hover {
   text-decoration: none;
-  background-color: hsl(347, 100%, 32%);
-  box-shadow: inset 0.0625rem 0.0625rem 0.3125rem 0.125rem hsl(347, 100%, 20%);
+  background-color: hsl(347, 100%, 12%);
+  box-shadow: inset 0.0625rem 0.0625rem 0.3125rem 0.125rem hsl(347, 100%, 5%);
 }
 
 nav > ul > li > a:active {
   color: var(--text-color-1);
 }
 
-nav > ul > li > a.on {
-  background-color: hsl(347, 53%, 15%);
-  box-shadow: 0.0625rem 0.0625rem 0.3125rem 0.0625rem hsl(347 100% 0%);
-}
-
-/* nav > ul > li > a.on:focus {
-  background-color: hsl(347, 53%, 15%);
-  box-shadow: 0.0625rem 0.0625rem 0.3125rem 0.0625rem hsl(347 100% 0%);
-} */
-
 nav > ul > li > a.on:hover {
-  box-shadow: 0.0625rem 0.0625rem 0.3125rem 0.0625rem hsl(347 100% 8%);
+  box-shadow: inset 0.0625rem 0.0625rem 0.3125rem 0.0625rem hsl(347 100% 8%);
 }
-
-/* nav > ul > li > a.on:active {
-  background-color: hsl(347, 53%, 15%);
-  box-shadow: 0.0625rem 0.0625rem 0.3125rem 0.0625rem hsl(347 100% 0%);
-} */
-
-/* .on {
-  background-color: hsl(347, 53%, 15%);
-  box-shadow: 0.0625rem 0.0625rem 0.3125rem 0.0625rem hsl(347 100% 0%);
-} */
 
 h1 {
   font: 3rem "Iceland", sans-serif;
@@ -192,7 +172,7 @@ img {
   height: auto;
   border-radius: 50%;
   margin: 0 5rem;
-  background-color: hsl(347, 53%, 15%);
+  background-color: hsl(347 53% 15% / 0.5);
   box-shadow: 0.0625rem 0.0625rem 0.3125rem 0.0625rem hsl(347 100% 0%);
 }
 
@@ -214,7 +194,6 @@ a:focus {
 a:hover {
   text-decoration: underline solid 0.0625rem;
   text-underline-offset: 0.25em;
-  /* text-decoration: none; */
 }
 
 a:active {
@@ -261,21 +240,11 @@ li {
     background-color: inherit;
     box-shadow: none;
   }
-  
+
   nav > ul > li > a.on:hover {
     background-color: hsl(347, 53%, 15%);
     box-shadow: 0.0625rem 0.0625rem 0.3125rem 0.0625rem hsl(347 100% 0%);
   }
-
-  /* nav > ul > li > a.on:focus {
-    background-color: hsl(347, 53%, 15%);
-    box-shadow: 0.0625rem 0.0625rem 0.3125rem 0.0625rem hsl(347 100% 0%);
-  } */
-
-  /* nav > ul > li > a.on:active {
-    background-color: hsl(347, 53%, 15%);
-    box-shadow: 0.0625rem 0.0625rem 0.3125rem 0.0625rem hsl(347 100% 0%);
-  } */
 
   h2 {
     text-align: center;
@@ -287,6 +256,10 @@ li {
   }
 
   abbr {
+    text-decoration: none;
+  }
+
+  abbr:hover {
     text-decoration: none;
   }
 }
