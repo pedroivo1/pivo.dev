@@ -99,6 +99,20 @@ nav > ul > li > a.on {
   box-shadow: 0.0625rem 0.0625rem 0.3125rem 0.0625rem hsl(347 100% 0%);
 }
 
+/* nav > ul > li > a.on:focus {
+  background-color: hsl(347, 53%, 15%);
+  box-shadow: 0.0625rem 0.0625rem 0.3125rem 0.0625rem hsl(347 100% 0%);
+} */
+
+nav > ul > li > a.on:hover {
+  box-shadow: 0.0625rem 0.0625rem 0.3125rem 0.0625rem hsl(347 100% 8%);
+}
+
+/* nav > ul > li > a.on:active {
+  background-color: hsl(347, 53%, 15%);
+  box-shadow: 0.0625rem 0.0625rem 0.3125rem 0.0625rem hsl(347 100% 0%);
+} */
+
 /* .on {
   background-color: hsl(347, 53%, 15%);
   box-shadow: 0.0625rem 0.0625rem 0.3125rem 0.0625rem hsl(347 100% 0%);
@@ -243,9 +257,25 @@ li {
   }
 
   nav > ul > li > a:hover {
+    text-decoration: none;
     background-color: inherit;
-    box-shadow: unset;
+    box-shadow: none;
   }
+  
+  nav > ul > li > a.on:hover {
+    background-color: hsl(347, 53%, 15%);
+    box-shadow: 0.0625rem 0.0625rem 0.3125rem 0.0625rem hsl(347 100% 0%);
+  }
+
+  /* nav > ul > li > a.on:focus {
+    background-color: hsl(347, 53%, 15%);
+    box-shadow: 0.0625rem 0.0625rem 0.3125rem 0.0625rem hsl(347 100% 0%);
+  } */
+
+  /* nav > ul > li > a.on:active {
+    background-color: hsl(347, 53%, 15%);
+    box-shadow: 0.0625rem 0.0625rem 0.3125rem 0.0625rem hsl(347 100% 0%);
+  } */
 
   h2 {
     text-align: center;
