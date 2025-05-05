@@ -6,9 +6,9 @@
 }
 
 html {
-  scroll-behavior: smooth;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  scroll-behavior: smooth;
   min-height: 100vh;
   font-family: "Anta", sans-serif;
   background: hsl(0, 0%, 30%);
@@ -17,11 +17,10 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  margin: 5vh 5vw;
-  min-width: 90vw;
-  min-height: 90vh;
-  border-radius: 16px;
+  flex-grow: 1;
   background-color: var(--background-color);
+  border-radius: 16px;
+  margin: 2rem;
   box-shadow: 0.0625rem 0.0625rem 0.3125rem 0.0625rem hsl(347, 100%, 0%);
 }
 
@@ -29,13 +28,13 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 1.25rem;
-  margin: 0 2rem 0 2rem;
+  margin: 0 2rem;
 }
 
 main {
   display: flex;
-  flex-grow: 1;
   align-items: center;
+  flex-grow: 1;
 }
 
 section {
@@ -193,7 +192,11 @@ abbr:hover {
 
 @media (max-width: 650px) {
   html {
-    min-height: 90vh;
+    min-height: 95vh;
+  }
+
+  body {
+    margin: 1rem;
   }
 
   header {
