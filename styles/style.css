@@ -225,6 +225,10 @@ abbr:hover {
     margin: 0 auto;
   }
 
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
   abbr {
     text-decoration: none;
   }
