@@ -133,7 +133,7 @@ p {
 
 img {
   float: inline-end;
-  width: 12rem;
+  width: 20rem;
   margin: 1rem;
   height: auto;
   border-radius: 50%;
@@ -222,6 +222,7 @@ abbr:hover {
 
   img {
     float: unset;
+    width: 15rem;
     margin: 0 auto;
   }
 
