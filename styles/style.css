@@ -1,11 +1,8 @@
 :root {
-  /* --text-color: hsl(0 0% 5%); */
-  --text-color-1: hsl(0 0% 95%);
-  --text-color-2: hsl(0 0% 5%);
-  /* --background-color-1: hsl(0 0% 95% / 0.7); */
-  /* --background-color-2: hsl(0 0% 80% / 0.7); */
-  --background-color-1: hsl(0 0% 14% / 0.7);
-  --background-color-2: hsl(0 0% 10% / 0.7);
+  /* --text-color: hsl(0, 0%, 5%); */
+  --text-color-1: hsl(0, 0%, 95%);
+  --text-color-2: hsl(0, 0%, 5%);
+  --background-color: hsl(0, 0%, 11%);
 }
 
 html {
@@ -13,8 +10,8 @@ html {
   display: flex;
   align-items: center;
   min-height: 100vh;
-  font: 16px "Anta", sans-serif;
-  background: linear-gradient(225deg, hsl(347 100% 20%), hsl(347 100% 10%));
+  font-family: "Anta", sans-serif;
+  background: hsl(0, 0%, 30%);
 }
 
 body {
@@ -23,13 +20,9 @@ body {
   margin: 5vh 5vw;
   min-width: 90vw;
   min-height: 90vh;
-  border-radius: 1rem;
-  background: linear-gradient(
-    120deg,
-    var(--background-color-1),
-    var(--background-color-2)
-  );
-  box-shadow: 0.0625rem 0.0625rem 0.3125rem 0.0625rem hsl(347 100% 0%);
+  border-radius: 16px;
+  background-color: var(--background-color);
+  box-shadow: 0.0625rem 0.0625rem 0.3125rem 0.0625rem hsl(347, 100%, 0%);
 }
 
 header {
@@ -69,11 +62,11 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-  letter-spacing: 0.125rem;
+  letter-spacing: 0.0625rem;
   text-decoration: none;
   padding: 0.3125rem 0.625rem;
   color: var(--text-color-1);
-  border-radius: 0.313rem;
+  border-radius: 5px;
 }
 
 nav > ul > li > a:visited {
@@ -86,16 +79,21 @@ nav > ul > li > a:focus {
 
 nav > ul > li > a:hover {
   text-decoration: none;
-  background-color: hsl(347, 100%, 12%);
-  box-shadow: inset 0.0625rem 0.0625rem 0.3125rem 0.125rem hsl(347, 100%, 5%);
+  background-color: hsl(0, 0%, 30%);
+  box-shadow: inset 0.0625rem 0.0625rem 0.3125rem 0.125rem hsl(0, 0%, 15%);
 }
 
 nav > ul > li > a:active {
   color: var(--text-color-1);
 }
 
+nav > ul > li > a.on {
+  border: 2px solid hsl(347, 100%, 65%);
+  box-shadow: inset 0.0625rem 0.0625rem 0.3125rem 0.0625rem hsl(0, 0%, 15%);
+}
+
 nav > ul > li > a.on:hover {
-  box-shadow: inset 0.0625rem 0.0625rem 0.3125rem 0.0625rem hsl(347 100% 8%);
+  box-shadow: inset 0.0625rem 0.0625rem 0.3125rem 0.0625rem hsl(0, 0%, 15%);
 }
 
 h1 {
@@ -104,7 +102,6 @@ h1 {
 
 h1 > a {
   text-decoration: none;
-  color: var(--text-color-1);
 }
 
 h1 > a:visited {
@@ -130,69 +127,40 @@ h4 {
   color: var(--text-color-1);
 }
 
-h2 > a,
-h3 > a,
-h4 > a {
-  text-decoration: none;
-  color: var(--text-color-1);
-}
-
-h2 > a:visited,
-h3 > a:visited,
-h4 > a:visited {
-  color: var(--text-color-1);
-}
-
-h2 > a:focus,
-h3 > a:focus,
-h4 > a:focus {
-  color: var(--text-color-1);
-}
-
-h2 > a:hover,
-h3 > a:hover,
-h4 > a:hover {
-  text-decoration: underline solid 0.125rem;
-}
-
-h2 > a:active,
-h3 > a:active,
-h4 > a:active {
-  color: var(--text-color-1);
-}
-
 p {
   color: var(--text-color-1);
-  margin-bottom: 1.25lh;
+  margin-bottom: 1lh;
 }
 
 img {
   float: inline-end;
   width: 12rem;
+  margin: 1rem;
   height: auto;
   border-radius: 50%;
-  margin: 0 5rem;
-  background-color: hsl(347 53% 15% / 0.5);
-  box-shadow: 0.0625rem 0.0625rem 0.3125rem 0.0625rem hsl(347 100% 0%);
+}
+
+li {
+  color: var(--text-color-1);
 }
 
 a {
   transition: 200ms;
-  text-decoration: underline dotted 0.0625rem;
+  text-decoration: underline dotted 1px;
   text-underline-offset: 0.125em;
   color: hsl(210, 100%, 75%);
 }
 
 a:visited {
-  color: hsl(210, 100%, 75%);
+  color: hsl(347, 100%, 75%);
 }
 
 a:focus {
-  color: hsl(130, 100%, 75%);
+  color: hsl(347, 100%, 75%);
 }
 
 a:hover {
-  text-decoration: underline solid 0.0625rem;
+  text-decoration: underline solid 1px;
   text-underline-offset: 0.25em;
 }
 
@@ -214,17 +182,13 @@ a[target="_blank"]::after {
 
 abbr {
   transition: 200ms;
-  text-decoration: underline dotted 0.0625rem;
+  text-decoration: underline dotted 1px;
   text-underline-offset: 0.125em;
 }
 
 abbr:hover {
-  text-decoration: underline solid 0.0625rem;
+  text-decoration: underline solid 1px;
   text-underline-offset: 0.25em;
-}
-
-li {
-  color: var(--text-color-1);
 }
 
 @media (max-width: 650px) {
@@ -241,9 +205,8 @@ li {
     box-shadow: none;
   }
 
-  nav > ul > li > a.on:hover {
-    background-color: hsl(347, 53%, 15%);
-    box-shadow: 0.0625rem 0.0625rem 0.3125rem 0.0625rem hsl(347 100% 0%);
+  h1 {
+    margin: 0.5lh;
   }
 
   h2 {
