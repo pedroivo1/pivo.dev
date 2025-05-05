@@ -192,6 +192,10 @@ abbr:hover {
 }
 
 @media (max-width: 650px) {
+  html {
+    min-height: 90vh;
+  }
+
   header {
     display: flex;
     flex-direction: column;
