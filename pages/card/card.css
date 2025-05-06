@@ -6,55 +6,43 @@
 }
 
 html {
+  display: flex;
+  flex-direction: column;
   scroll-behavior: smooth;
+  min-height: 100vh;
   font-family: "Anta", sans-serif;
+  background: hsl(0, 0%, 30%);
 }
 
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  flex-grow: 1;
   background-color: var(--background-color);
+  border-radius: 16px;
+  margin: 5vh 5vw;
+  padding: 0 3rem;
+  box-shadow: 0.0625rem 0.0625rem 0.3125rem 0.0625rem hsl(347, 100%, 0%);
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  padding: 1.25rem;
-  margin: 0 2rem;
-}
-
-.positioned {
-  position: static;
-  background: yellow;
 }
 
 main {
+  display: flex;
+  align-items: center;
   flex-grow: 1;
-  padding: 0 1.25rem;
-  margin: 0;
 }
-
-footer {
-  padding: 0.25rem;
-  margin: 0 2rem;
-}
-
-footer p {
-  padding: 0;
-  margin: 0;
-}
-
 
 nav {
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
 
 nav > ul {
   display: flex;
-  flex-direction: row;
   padding: 0;
   margin: 0;
 }
@@ -132,7 +120,6 @@ h4 {
 
 p {
   color: var(--text-color-1);
-  margin-bottom: 1lh;
 }
 
 img {
@@ -195,14 +182,17 @@ abbr:hover {
 }
 
 @media (max-width: 650px) {
-  body {
+  html {
     min-height: 100svh;
+  }
+
+  body {
+    margin: 5vh 5vw;
   }
 
   header {
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
   }
 
   nav > ul > li > a:hover {
@@ -220,6 +210,7 @@ abbr:hover {
   }
 
   img {
+    display: block;
     float: unset;
     width: 15rem;
     margin: 0 auto;

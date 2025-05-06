@@ -1,4 +1,5 @@
-const navLinks = document.querySelectorAll("header nav ul li a");
+const allLinks = document.querySelectorAll("header nav ul li a");
+const navLinks = Array.from(allLinks).slice(1);
 const sections = document.querySelectorAll("main section");
 
 navLinks.forEach((link) => {
