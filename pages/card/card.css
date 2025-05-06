@@ -1,13 +1,10 @@
 :root {
   --text-color-1: hsl(0, 0%, 95%);
   --text-color-2: hsl(0, 0%, 5%);
-  --background-color: hsl(0, 0%, 5%, 0.55);
+  --background-color: hsl(0, 0%, 0%, 0.45);
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
   background: hsl(0, 0%, 27%);
   background-image: url("table.jpg");
   background-size: cover;
@@ -19,6 +16,7 @@ body {
   flex-grow: 1;
   margin: 5vh 5vw;
   border-radius: 16px;
+  background-color: var(--background-color);
   box-shadow: 1px 1px 7px 2px hsl(347, 100%, 0%);
   backdrop-filter: blur(2px);
 }

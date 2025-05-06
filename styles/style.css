@@ -235,3 +235,19 @@ abbr:hover {
     text-decoration: none;
   }
 }
+
+.svg-a {
+  /* background-color: var(--background-color);
+  position: fixed;
+  left: calc(100vw - 5rem); */
+}
+
+.svg-a svg{
+  position: sticky;
+  top: 15svh;
+  fill: hsl(347, 100%, 70%);
+  background-color: var(--background-color);
+  aspect-ratio: 1;
+  width: 2.5rem;
+  display: inline-block;
+}
