@@ -1,133 +1,41 @@
 :root {
-  /* --text-color: hsl(0, 0%, 5%); */
   --text-color-1: hsl(0, 0%, 95%);
   --text-color-2: hsl(0, 0%, 5%);
-  --background-color: hsl(0, 0%, 11%, 0.7);
+  --background-color: hsl(0, 0%, 5%, 0.55);
 }
 
-html {
+body {
   display: flex;
   flex-direction: column;
-  scroll-behavior: smooth;
   min-height: 100vh;
-  font-family: "Anta", sans-serif;
-  background: hsl(0, 0%, 30%);
+  background: hsl(0, 0%, 27%);
   background-image: url("table.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
+.card {
   flex-grow: 1;
-  background-color: var(--background-color);
-  border-radius: 16px;
   margin: 5vh 5vw;
-  padding: 0 3rem;
+  border-radius: 16px;
   box-shadow: 1px 1px 7px 2px hsl(347, 100%, 0%);
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(2px);
 }
 
 header {
+  position: static;
   display: flex;
   justify-content: space-between;
+  backdrop-filter: unset;
 }
 
 main {
   display: flex;
   align-items: center;
-  flex-grow: 1;
 }
 
-nav {
-  display: flex;
-  align-items: center;
-}
-
-nav > ul {
-  display: flex;
-  padding: 0;
-  margin: 0;
-}
-
-nav > ul > li {
-  margin: 0 0.25rem;
-  list-style-type: none;
-}
-
-nav > ul > li > a {
-  letter-spacing: 0.0625rem;
-  text-decoration: none;
-  padding: 0.3125rem 0.625rem;
-  color: var(--text-color-1);
-  border-radius: 5px;
-}
-
-nav > ul > li > a:visited {
-  color: var(--text-color-1);
-}
-
-nav > ul > li > a:focus {
-  color: var(--text-color-1);
-}
-
-nav > ul > li > a:hover {
-  text-decoration: none;
-  background-color: hsl(0, 0%, 30%);
-  box-shadow: inset 0.0625rem 0.0625rem 0.3125rem 0.125rem hsl(0, 0%, 15%);
-}
-
-nav > ul > li > a:active {
-  color: var(--text-color-1);
-}
-
-nav > ul > li > a.on {
-  border: 2px solid hsl(347, 100%, 65%);
-  box-shadow: inset 0.0625rem 0.0625rem 0.3125rem 0.0625rem hsl(0, 0%, 15%);
-}
-
-nav > ul > li > a.on:hover {
-  box-shadow: inset 0.0625rem 0.0625rem 0.3125rem 0.0625rem hsl(0, 0%, 15%);
-}
-
-h1 {
-  font: 3rem "Iceland", sans-serif;
-}
-
-h1 > a {
-  text-decoration: none;
-}
-
-h1 > a:visited {
-  color: var(--text-color-1);
-}
-
-h1 > a:focus {
-  color: var(--text-color-1);
-}
-
-h1 > a:hover {
-  text-decoration: none;
-}
-
-h1 > a:active {
-  color: var(--text-color-1);
-}
-
-h2,
-h3,
-h4 {
-  font-family: "Audiowide", sans-serif;
-  color: var(--text-color-1);
-}
-
-p {
-  color: var(--text-color-1);
-}
-
-img {
+#my-image {
   float: inline-end;
   width: 20rem;
   margin: 1rem;
@@ -135,113 +43,19 @@ img {
   border-radius: 50%;
 }
 
-li {
-  color: var(--text-color-1);
-}
-
-a {
-  transition: 200ms;
-  text-decoration: underline dotted 1px;
-  text-underline-offset: 0.125em;
-  color: hsl(210, 100%, 75%);
-}
-
-a:visited {
-  color: hsl(347, 100%, 75%);
-}
-
-a:focus {
-  color: hsl(347, 100%, 75%);
-}
-
-a:hover {
-  text-decoration: underline solid 1px;
-  text-underline-offset: 0.25em;
-}
-
-a:active {
-  color: hsl(347, 100%, 75%);
-}
-
-a[target="_blank"]::after {
-  content: "\00a0";
-  display: inline-block;
-  width: 0.75em;
-  height: 0.75em;
-  margin-inline-start: 0.0625rem;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0%20-960%20960%20960' width='24px' fill='%23f2f2f2'%3E%3Cpath d='M200-120q-33%200-56.5-23.5T120-200v-560q0-33%2023.5-56.5T200-840h280v80H200v560h560v-280h80v280q0%2033-23.5%2056.5T760-120H200Zm188-212-56-56%20372-372H560v-80h280v280h-80v-144L388-332Z'/%3E%3C/svg%3E");
-  background-size: contain;
-  background-repeat: no-repeat;
-  vertical-align: middle;
-}
-
-abbr {
-  transition: 200ms;
-  text-decoration: underline dotted 1px;
-  text-underline-offset: 0.125em;
-}
-
-abbr:hover {
-  text-decoration: underline solid 1px;
-  text-underline-offset: 0.25em;
-}
-
 @media (max-width: 650px) {
-  html {
+  body {
     min-height: 100svh;
   }
 
-  body {
+  .card {
     margin: 5vh 5vw;
   }
 
-  header {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav > ul > li > a:hover {
-    text-decoration: none;
-    background-color: inherit;
-    box-shadow: none;
-  }
-
-  h1 {
-    margin: 0.5lh;
-  }
-
-  h2 {
-    text-align: center;
-  }
-
-  img {
+  #my-image {
     display: block;
     float: unset;
-    width: 15rem;
+    width: 50vw;
     margin: 0 auto;
-  }
-
-  a {
-    -webkit-tap-highlight-color: transparent;
-  }
-
-  a:focus {
-    color: hsl(347, 100%, 75%);
-  }
-
-  a:hover {
-    color: hsl(347, 100%, 75%);
-  }
-
-  a:active {
-    color: hsl(347, 100%, 75%);
-  }
-
-  abbr {
-    text-decoration: none;
-  }
-
-  abbr:hover {
-    text-decoration: none;
   }
 }

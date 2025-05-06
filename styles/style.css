@@ -22,12 +22,8 @@ header {
   top: 0;
   display: flex;
   justify-content: space-between;
-  padding: 1.25rem;
-
-  /* Efeito vidro */
-  /* background: rgba(255, 255, 255, 0.1); */
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  padding: 0 1.25rem 1.25rem 1.25rem;
+  backdrop-filter: blur(5px);
 }
 
 main {
@@ -48,7 +44,6 @@ footer p {
 
 nav {
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
 
@@ -82,8 +77,9 @@ nav > ul > li > a:focus {
 
 nav > ul > li > a:hover {
   text-decoration: none;
+  color: hsl(347, 100%, 75%);
   background-color: hsl(0, 0%, 30%);
-  box-shadow: inset 0.0625rem 0.0625rem 0.3125rem 0.125rem hsl(0, 0%, 15%);
+  box-shadow: inset 1px 1px 3px 2px hsl(0, 0%, 15%);
 }
 
 nav > ul > li > a:active {
@@ -92,11 +88,11 @@ nav > ul > li > a:active {
 
 nav > ul > li > a.on {
   border: 2px solid hsl(347, 100%, 65%);
-  box-shadow: inset 0.0625rem 0.0625rem 0.3125rem 0.0625rem hsl(0, 0%, 15%);
+  box-shadow: inset 1px 1px 3px 1px hsl(0, 0%, 15%);
 }
 
 nav > ul > li > a.on:hover {
-  box-shadow: inset 0.0625rem 0.0625rem 0.3125rem 0.0625rem hsl(0, 0%, 15%);
+  box-shadow: inset 1px 1px 3px 1px hsl(0, 0%, 15%);
 }
 
 h1 {
@@ -211,18 +207,8 @@ abbr:hover {
     box-shadow: none;
   }
 
-  h1 {
-    margin: 0.5lh;
-  }
-
   h2 {
     text-align: center;
-  }
-
-  img {
-    float: unset;
-    width: 15rem;
-    margin: 0 auto;
   }
 
   a {
