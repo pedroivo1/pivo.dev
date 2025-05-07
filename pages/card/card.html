@@ -86,7 +86,7 @@
   </head>
 
   <body>
-    <div class="card">
+    <div class="main-card">
       <header>
         <h1><a href="https://pedroivo1.github.io/pivo.dev/">pivo.dev</a></h1>
         <nav>
@@ -99,9 +99,9 @@
       </header>
 
       <main>
-        <section id="sobre" class="section-on">
+        <section id="sobre" class="section-on" hidden>
           <h2>Sobre Mim</h2>
-          <!-- <img src="Pedro-Ivo.png" alt="Minha foto: Homem branco jovem de camisa amarela." id="my-image" /> -->
+          <img src="Pedro-Ivo.png" alt="Minha foto" id="my-image" />
           <p>
             Olá! Meu nome é Pedro Ivo e estou no 2º semestre do curso de
             <a href="https://uvv.br/cursos/graduacao/presencial/ciencia-da-computacao/" target="_blank"
@@ -132,10 +132,18 @@
         <section id="projetos" hidden>
           <h2>Projetos</h2>
           <ul>
-            <li><a href="#">Projeto 1</a>: Descrição breve do projeto.</li>
-            <li><a href="#">Projeto 2</a>: Descrição breve do projeto.</li>
-            <li><a href="#">Projeto 3</a>: Descrição breve do projeto.</li>
-            <li><a href="#">Projeto 4</a>: Descrição breve do projeto.</li>
+            <li>
+              <article class="card">
+                <header>
+                  <h3>A short heading</h3>
+                </header>
+
+                <img src="https://mdn.github.io/shared-assets/images/examples/balloons2.jpg" alt="Hot air balloons" />
+                <div class="content">
+                  <p>Short content.</p>
+                </div>
+              </article>
+            </li>
           </ul>
         </section>
       </main>

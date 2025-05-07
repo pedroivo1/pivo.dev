@@ -10,12 +10,12 @@ navLinks.forEach((link) => {
 
     // Esconde todas as seções
     sections.forEach((section) => {
-      section.setAttribute("hidden", "true");
+      section.classList.remove("section-on");
     });
     // Mostra a seção alvo
     const targetSection = document.getElementById(targetId);
     if (targetSection) {
-      targetSection.removeAttribute("hidden");
+      targetSection.classList.add("section-on");
     }
 
     // Remove 'on' de todos os links
