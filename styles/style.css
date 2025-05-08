@@ -1,8 +1,8 @@
 :root {
-  /* --text-color: hsl(0, 0%, 5%); */
-  --text-color-1: hsl(0, 0%, 95%);
-  --text-color-2: hsl(0, 0%, 5%);
-  --background-color: hsl(0, 0%, 11%);
+  --text-color-1: hsl(0, 0%, 5%);
+  --text-color-2: hsl(347, 100%, 55%);
+  --a-color-link: hsl(210, 100%, 50%);
+  --background-color: hsl(0, 0%, 90%, 0.7);
 }
 
 html {
@@ -13,35 +13,12 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  background-color: var(--background-color);
-}
-
-body > header {
-  position: sticky;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 1.25rem 1.25rem 1.25rem;
-  backdrop-filter: blur(5px);
-}
-
-body > main {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  padding: 0 1.25rem;
-  margin: 0;
-}
-
-body > footer {
-  padding: 0.25rem;
-  margin: 0 2rem;
-}
-
-footer p {
-  padding: 0;
-  margin: 0;
+  min-height: 100svh;
+  background: var(--background-color);
+  background-image: url("../images/mesa.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 nav {
@@ -62,11 +39,11 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-  letter-spacing: 0.0625rem;
+  letter-spacing: 1px;
   text-decoration: none;
   padding: 0.3125rem 0.625rem;
   color: var(--text-color-1);
-  border-radius: 5px;
+  border-radius: 0.3rem;
 }
 
 nav > ul > li > a:visited {
@@ -79,9 +56,9 @@ nav > ul > li > a:focus {
 
 nav > ul > li > a:hover {
   text-decoration: none;
-  color: hsl(347, 100%, 75%);
-  background-color: hsl(0, 0%, 30%);
-  box-shadow: inset 1px 1px 3px 2px hsl(0, 0%, 15%);
+  color: var(--text-color-2);
+  background-color: hsl(0, 0%, 90%);
+  box-shadow: 1px 1px 3px 2px hsl(0, 0%, 15%);
 }
 
 nav > ul > li > a:active {
@@ -89,12 +66,7 @@ nav > ul > li > a:active {
 }
 
 nav > ul > li > a.on {
-  border: 2px solid hsl(347, 100%, 65%);
-  box-shadow: inset 1px 1px 3px 1px hsl(0, 0%, 15%);
-}
-
-nav > ul > li > a.on:hover {
-  box-shadow: inset 1px 1px 3px 1px hsl(0, 0%, 15%);
+  border: 2px solid var(--text-color-2);
 }
 
 h1 {
@@ -103,6 +75,10 @@ h1 {
 
 h1 > a {
   text-decoration: none;
+}
+
+h1 > a:link {
+  color: var(--text-color-1);
 }
 
 h1 > a:visited {
@@ -133,14 +109,6 @@ p {
   margin-bottom: 1lh;
 }
 
-img {
-  float: inline-end;
-  width: 20rem;
-  margin: 1rem;
-  height: auto;
-  border-radius: 50%;
-}
-
 li {
   color: var(--text-color-1);
 }
@@ -149,15 +117,15 @@ a {
   transition: 200ms;
   text-decoration: underline dotted 1px;
   text-underline-offset: 0.125em;
-  color: hsl(210, 100%, 75%);
+  color: var(--a-color-link);
 }
 
 a:visited {
-  color: hsl(347, 100%, 75%);
+  color: var(--text-color-2);
 }
 
 a:focus {
-  color: hsl(347, 100%, 75%);
+  color: var(--text-color-2);
 }
 
 a:hover {
@@ -166,7 +134,7 @@ a:hover {
 }
 
 a:active {
-  color: hsl(347, 100%, 75%);
+  color: var(--text-color-2);
 }
 
 a[target="_blank"]::after {
@@ -175,7 +143,7 @@ a[target="_blank"]::after {
   width: 0.75em;
   height: 0.75em;
   margin-inline-start: 0.0625rem;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0%20-960%20960%20960' width='24px' fill='%23f2f2f2'%3E%3Cpath d='M200-120q-33%200-56.5-23.5T120-200v-560q0-33%2023.5-56.5T200-840h280v80H200v560h560v-280h80v280q0%2033-23.5%2056.5T760-120H200Zm188-212-56-56%20372-372H560v-80h280v280h-80v-144L388-332Z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0%20-960%20960%20960' width='24px' fill='%230d0d0d'%3E%3Cpath d='M200-120q-33%200-56.5-23.5T120-200v-560q0-33%2023.5-56.5T200-840h280v80H200v560h560v-280h80v280q0%2033-23.5%2056.5T760-120H200Zm188-212-56-56%20372-372H560v-80h280v280h-80v-144L388-332Z'/%3E%3C/svg%3E");
   background-size: contain;
   background-repeat: no-repeat;
   vertical-align: middle;
@@ -193,10 +161,6 @@ abbr:hover {
 }
 
 @media (max-width: 650px) {
-  body {
-    min-height: 100svh;
-  }
-
   header {
     flex-direction: column;
     align-items: center;
@@ -218,15 +182,15 @@ abbr:hover {
   }
 
   a:focus {
-    color: hsl(347, 100%, 75%);
+    color: var(--text-color-2);
   }
 
   a:hover {
-    color: hsl(347, 100%, 75%);
+    color: var(--text-color-2);
   }
 
   a:active {
-    color: hsl(347, 100%, 75%);
+    color: var(--text-color-2);
   }
 
   abbr {
@@ -236,14 +200,4 @@ abbr:hover {
   abbr:hover {
     text-decoration: none;
   }
-}
-
-.svg-a svg{
-  position: sticky;
-  top: 15svh;
-  fill: hsl(347, 100%, 70%);
-  background-color: var(--background-color);
-  aspect-ratio: 1;
-  width: 2.5rem;
-  display: inline-block;
 }
