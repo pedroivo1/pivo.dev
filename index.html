@@ -3,61 +3,65 @@
   <head>
     <!-- CONFIGURAÇÕES -->
     <meta charset="UTF-8" />
-    <title>pivo.dev</title>
+    <title>pivo.dev - cartão</title>
     <meta name="viewport" content="width=device-width" />
 
-    <!-- FAVICONS -->
+    <!-- FAVICON -->
     <link rel="icon" type="image/png" sizes="64x64" href="images/p-64x64.png" />
-    <link rel="icon" type="image/png" sizes="512x512" href="images/p-512x512.png" />
-    <link rel="icon" type="image/png" sizes="256x256" href="images/p-256x256.png" />
-    <link rel="icon" type="image/png" sizes="128x128" href="images/p-128x128.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="images/p-32x32.png" />
-    <link rel="icon" type="image/png" sizes="24x24" href="images/p-24x24.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="images/p-16x16.png" />
+    <link rel="icon" type="image/png" sizes="24x24" href="images/p-24x24.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/p-32x32.png" />
+    <link rel="icon" type="image/png" sizes="128x128" href="images/p-128x128.png" />
+    <link rel="icon" type="image/png" sizes="256x256" href="images/p-256x256.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="images/p-512x512.png" />
 
-    <!-- INFORMAÇÕES (SEO) -->
+    <!-- INFORMAÇÕES (SEO)-->
     <meta name="author" content="Pedro Ivo A. Lima" />
-    <meta name="description" content="Site criado para treinar CSS e HTML básicos." />
+    <meta name="description" content='Meu "currículo online" — Um cartão de apresentação com HTML, CSS, JS. ☺' />
 
     <!-- OPEN GRAPHS -->
     <!-- GERAL -->
     <meta property="og:site_name" content="pivo.dev" />
     <meta property="og:url" content="https://pedroivo1.github.io/pivo.dev/" />
-    <meta property="og:title" content="pivo.dev" />
+    <meta property="og:title" content="pivo.dev - cartão" />
     <meta property="og:locale" content="pt-BR" />
     <!-- TIPO -->
-    <meta property="og:type" content="website" />
-    <!-- Imagem 512x512px -->
+    <meta property="og:type" content="profile" />
+    <meta property="profile:first_name" content="Pedro Ivo" />
+    <meta property="profile:last_name" content="Ivo Amaral Lima" />
+    <meta property="profile:username" content="pedroivo1" />
+    <meta property="profile:gender" content="male" />
+    <!-- IMAGEM 512x512px -->
     <meta property="og:image" content="https://pedroivo1.github.io/pivo.dev/images/p-512x512.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="512" />
     <meta property="og:image:height" content="512" />
     <meta property="og:image:alt" content="Logo do site: letra P maiúscula" />
-    <!-- Imagem 256x256px -->
+    <!-- IMAGEM 256x256px -->
     <meta property="og:image" content="https://pedroivo1.github.io/pivo.dev/images/p-256x256.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="256" />
     <meta property="og:image:height" content="256" />
     <meta property="og:image:alt" content="Logo do site: letra P maiúscula" />
-    <!-- Imagem 128x128px -->
+    <!-- IMAGEM 128x128px -->
     <meta property="og:image" content="https://pedroivo1.github.io/pivo.dev/images/p-128x128.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="128" />
     <meta property="og:image:height" content="128" />
     <meta property="og:image:alt" content="Logo do site: letra P maiúscula" />
-    <!-- Imagem 64x64px -->
+    <!-- IMAGEM 64x64px -->
     <meta property="og:image" content="https://pedroivo1.github.io/pivo.dev/images/p-64x64.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="64" />
     <meta property="og:image:height" content="64" />
     <meta property="og:image:alt" content="Logo do site: letra P maiúscula" />
-    <!-- Imagem 32x32px -->
+    <!-- IMAGEM 32x32px -->
     <meta property="og:image" content="https://pedroivo1.github.io/pivo.dev/images/p-32x32.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="32" />
     <meta property="og:image:height" content="32" />
     <meta property="og:image:alt" content="Logo do site: letra P maiúscula" />
-    <!-- Imagem 16x16px -->
+    <!-- IMAGEM 16x16px -->
     <meta property="og:image" content="https://pedroivo1.github.io/pivo.dev/images/p-16x16.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="16" />
@@ -75,109 +79,256 @@
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+
+    <!-- SCRIPTS -->
+    <script src="scripts/index.js" defer></script>
   </head>
 
   <body>
-    <header>
-      <h1><a href="https://pedroivo1.github.io/pivo.dev/">pivo.dev</a></h1>
-      <nav>
-        <ul>
-          <li><a href="#" class="on">Home</a></li>
-        </ul>
-      </nav>
-    </header>
-    <a href="pages/card/card.html" class="svg-a">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#1f1f1f">
-        <path
-          d="M560-440h200v-80H560v80Zm0-120h200v-80H560v80ZM200-320h320v-22q0-45-44-71.5T360-440q-72 0-116 26.5T200-342v22Zm160-160q33 0 56.5-23.5T440-560q0-33-23.5-56.5T360-640q-33 0-56.5 23.5T280-560q0 33 23.5 56.5T360-480ZM160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80h640v-480H160v480Zm0 0v-480 480Z"
-        />
-      </svg>
-    </a>
-    <main>
-      <p>Este site está em construção, mas o <a href="pages/card/card.html">cartão</a> já está pronto.</p>
+    <div class="main-card">
+      <header>
+        <h1><a href="https://pedroivo1.github.io/pivo.dev/">pivo.dev</a></h1>
+        <nav>
+          <ul>
+            <li><a href="#sobre" class="on">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+          </ul>
+        </nav>
+      </header>
 
-      <section>
-        <h2>h2</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem sit aliquid sunt nulla enim harum, odit
-          explicabo! Tempore iusto ex quos reprehenderit ducimus odit sapiente incidunt, fugit optio dolore recusandae.
-          Voluptatum sit dolorum maiores exercitationem ullam consequatur quis quibusdam cupiditate eaque, minima natus
-          labore illum? Dolores pariatur voluptate et quasi, odio libero quibusdam laboriosam similique, consequuntur
-          cumque assumenda, voluptatum laudantium.
-        </p>
-        <p>
-          Distinctio blanditiis amet dolores pariatur fugit beatae. Iure aut sint officiis natus ullam? Obcaecati magnam
-          quam iusto inventore, quidem similique non officiis illo doloribus, molestias delectus rerum repellendus atque
-          vel? Voluptates fugit numquam aspernatur assumenda suscipit dolore dolor accusamus reiciendis odio iste
-          maiores at voluptatum voluptatem nulla eum asperiores, quae in ad cum minima officia magni velit. Voluptates,
-          nihil suscipit! Deserunt atque, minima tempora commodi illo magni quae ex, nihil placeat excepturi, aspernatur
-          totam! Tenetur itaque ullam atque laboriosam, voluptatibus voluptatum porro commodi magni, nemo distinctio
-          provident pariatur eligendi quaerat! Aut quis maxime saepe ab delectus et eius laborum beatae repudiandae?
-          Culpa, recusandae. Fugit atque tempore at? Nihil odio fugit, ut aspernatur explicabo ducimus ipsum veritatis
-          ab esse. Eum, est. Error voluptatem a ratione tempore alias sit soluta aliquid beatae, deserunt nobis voluptas
-          excepturi? Voluptatum animi ipsam cupiditate repudiandae accusamus modi quo repellendus illum. Ullam labore
-          illo suscipit eum perferendis.
-        </p>
-      </section>
-      <section>
-        <h2>h2</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime animi minus quis? Officiis ad hic accusantium
-          laborum natus aliquid aliquam dolorem id mollitia nesciunt ratione eum, nemo suscipit similique pariatur.
-          Debitis totam incidunt accusamus qui voluptatum et atque fuga soluta sequi cupiditate quidem, temporibus
-          iusto, iste illo ipsa tenetur hic, voluptatibus corrupti recusandae praesentium! Quidem consequatur saepe
-          labore inventore nostrum? Optio, vero! Voluptas soluta tempora mollitia magni atque, magnam, suscipit facilis
-          rem cum, repellendus dolor veritatis. Veniam facilis quasi dolor eligendi labore magnam eos distinctio!
-          Explicabo corporis est eligendi cum?
-        </p>
-        <h3>h3</h3>
-        <p>
-          Ratione ducimus fugiat labore, ab ipsam aliquam blanditiis nihil molestiae! Perferendis reiciendis vitae
-          nostrum repellat illum quas, consequuntur praesentium recusandae cumque veritatis, facilis impedit ut, animi
-          laboriosam ullam voluptates culpa? Voluptates adipisci libero quibusdam modi inventore officiis fuga ab, sunt
-          ut autem nemo quia cumque placeat temporibus qui nobis recusandae excepturi. Quae exercitationem, nobis
-          ducimus rerum culpa adipisci nisi tempore. Doloremque, animi provident? Odio dolores ducimus obcaecati, quos
-          ratione minus maiores, eius incidunt reprehenderit libero praesentium! Laborum suscipit mollitia porro qui
-          beatae dolore sapiente minus provident quaerat in! Commodi, autem. Blanditiis, sapiente! Ducimus recusandae
-          consectetur, corporis expedita aliquid laudantium, reiciendis cumque voluptatibus sequi, quidem asperiores?
-        </p>
-        <p>
-          Labore quam blanditiis unde nostrum eligendi dignissimos accusantium, nesciunt nisi exercitationem magnam
-          consectetur quis ea! Iste quod, suscipit tempore facilis quo eligendi earum nisi rem fugiat maiores fuga saepe
-          tempora! Distinctio velit sequi, fugit eligendi reprehenderit explicabo soluta totam provident iste corporis.
-          Sunt consectetur, fugit vitae facere maiores velit, unde, reprehenderit voluptates cum sint corrupti.
-          Repudiandae maiores magnam veniam exercitationem?
-        </p>
-      </section>
-      <section>
-        <h2>h2</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vero minus praesentium deserunt fugiat,
-          nesciunt, vitae sapiente, aperiam fuga quod repellendus quasi porro molestias dignissimos officiis commodi
-          necessitatibus eos dolore. Quis quam repellendus consequatur maiores obcaecati libero? Perspiciatis similique
-          doloribus illo doloremque ea. Ipsum, minus debitis illum sequi delectus quam animi earum voluptatum, fugiat
-          totam nam consequuntur molestias, sed necessitatibus.
-        </p>
-        <p>
-          Quod incidunt non a harum modi? Similique reprehenderit accusantium quisquam autem? Eveniet corporis labore
-          earum, voluptatibus quasi modi aliquid hic veniam magnam dignissimos autem fuga cum aspernatur eligendi eius
-          placeat. Laboriosam a id, necessitatibus ratione nobis praesentium libero eveniet obcaecati rerum maxime sed
-          ipsum quasi asperiores iste optio delectus fuga nulla ea tenetur harum. Iusto doloremque deleniti facilis
-          tenetur voluptatem! At necessitatibus commodi possimus. Numquam nam similique dolor autem tempora veniam magni
-          dignissimos enim quae. Vitae non, fuga minima obcaecati perspiciatis quaerat quisquam ratione dolor iste, et
-          tempore omnis distinctio! Quod rerum aperiam dolore fugit necessitatibus enim dolorum. Consectetur iste in
-          deserunt ea sint ipsa omnis, iusto, ab ducimus, minus error ipsam fugiat necessitatibus sunt.
-        </p>
-      </section>
-    </main>
+      <main>
+        <section id="sobre" class="section-on" hidden>
+          <h2>Sobre Mim</h2>
+          <img src="images/eu.png" alt="Minha foto" id="my-image" />
+          <p>
+            Olá! Meu nome é Pedro Ivo e estou no 2º semestre do curso de
+            <a href="https://uvv.br/cursos/graduacao/presencial/ciencia-da-computacao/" target="_blank"
+              >ciência da computação</a
+            >
+            na
+            <a href="https://uvv.br" target="_blank">UVV</a> (Universidade Vila Velha).
+          </p>
+          <p>
+            Atualmente, estou em busca de um estágio na área de programação. Quero colocar um projeto em produção,
+            colaborar com a equipe, corrigir bugs e, acima de tudo, aprender o máximo possível com os colegas de
+            trabalho e os desafios do dia a dia.
+          </p>
+          <p>
+            Neste semestre, tenho dedicado bastante tempo aos estudos de matemática, pois acredito que uma base sólida
+            será fundamental para lidar com os maiores desafios como desenvolvedor. Além disso, estou me aprofundando em
+            desenvolvimento web, uma área que me atrai tanto pelas coisas incríveis que dá para criar quanto pela
+            possibilidade de colocar em prática o que aprendo por meio de projetos visuais e interativos.
+          </p>
+          <h3>Curiosidade</h3>
+          <p>
+            Sou apaixonado por esportes — pratico basquete, escalada e ando de bicicleta pela orla (não sei se conta
+            como "ciclismo"😄). Quando o assunto é assistir, topo qualquer coisa: de
+            <abbr title="Mixed Martial Arts">MMA</abbr> e sumô até vôlei e pingue-pongue.
+          </p>
+        </section>
 
-    <footer>
-      <p>
-        &copy; 2025 Pivo. Todos os direitos reservados🧐.<br />
-        Brinks 😄, toda landing page foi feita seguindo tutoriais do
-        <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development" target="_blank">MDN</a>
-        (Mozilla Developer Network).
-      </p>
-    </footer>
+        <section id="projetos" hidden>
+          <h2>Projetos</h2>
+          <p>Esta seção está vazia mas com o esse estágio ela pode começar a ser preenchida.</p>
+          <ul>
+            <li>
+              <article class="card">
+                <header>
+                  <h3>PyGame-Shooter</h3>
+                </header>
+
+                <img src="images/conjunto-vazio.png" alt="Simbolo de conjunto vazio" />
+                <div class="content">
+                  <p>Short content.</p>
+                </div>
+                <footer>
+                  <ul>
+                    <li class="li-svg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                        />
+                      </svg>
+                    </li>
+                    <li class="li-svg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
+                        />
+                      </svg>
+                    </li>
+                    <li class="li-svg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
+                        />
+                      </svg>
+                    </li>
+                  </ul>
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="card">
+                <header>
+                  <h3>PyGame-Shooter</h3>
+                </header>
+
+                <img src="images/conjunto-vazio.png" alt="Simbolo de conjunto vazio" />
+                <div class="content">
+                  <p>Short content.</p>
+                </div>
+                <footer>
+                  <ul>
+                    <li class="li-svg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                        />
+                      </svg>
+                    </li>
+                    <li class="li-svg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
+                        />
+                      </svg>
+                    </li>
+                    <li class="li-svg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
+                        />
+                      </svg>
+                    </li>
+                  </ul>
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="card">
+                <header>
+                  <h3>PyGame-Shooter</h3>
+                </header>
+
+                <img src="images/conjunto-vazio.png" alt="Simbolo de conjunto vazio" />
+                <div class="content">
+                  <p>Short content.</p>
+                </div>
+                <footer>
+                  <ul>
+                    <li class="li-svg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                        />
+                      </svg>
+                    </li>
+                    <li class="li-svg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
+                        />
+                      </svg>
+                    </li>
+                    <li class="li-svg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
+                        />
+                      </svg>
+                    </li>
+                  </ul>
+                </footer>
+              </article>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
   </body>
 </html>

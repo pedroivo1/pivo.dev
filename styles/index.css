@@ -1,12 +1,12 @@
 :root {
-  --text-color-1: hsl(0, 0%, 95%);
-  --text-color-2: hsl(0, 0%, 5%);
-  --background-color: hsl(0, 0%, 0%, 0.45);
+  --text-color-1: hsl(0, 0%, 5%);
+  --text-color-2: hsl(347, 100%, 75%);
+  --background-color: hsl(0, 0%, 90%, 0.45);
 }
 
 body {
   background: hsl(0, 0%, 27%);
-  background-image: url("table.jpg");
+  background-image: url("../images/mesa.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -33,7 +33,10 @@ body {
 }
 
 main {
-  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
   align-items: center;
 }
 
@@ -46,23 +49,55 @@ article.card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 17rem;
-  height: 25rem;
+  /* width: 23rem; */
+  height: 29rem;
+  max-width: 80vw;
+  padding: 0.5rem;
   border: 2px solid black;
   border-radius: 1rem;
   background-color: hsl(0, 0%, 13%);
+}
+
+.card header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card footer {
+  width: 100%;
+  display: flex;
+  justify-content: end;
 }
 
 .card img, .card video {
   width: 15rem;
 }
 
+.content {
+  display: flex;
+  flex-grow: 1;
+}
+
 h2 {
   text-align: center;
+  margin-bottom: 0.5lh;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
 }
 
 li {
   list-style-type: none;
+}
+
+.li-svg svg{
+  width: 1.8rem;
+  stroke: aliceblue;
 }
 
 .section-content {
@@ -79,6 +114,13 @@ li {
   margin: 1rem;
   height: auto;
   border-radius: 50%;
+}
+
+#projetos p{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  text-align: center;
 }
 
 @media (max-width: 650px) {
