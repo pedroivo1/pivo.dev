@@ -80,10 +80,12 @@
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/collapsible.css">
 
     <!-- SCRIPTS -->
     <script src="scripts/index.js" defer></script>
     <script src="scripts/card.js" defer></script>
+    <script src="scripts/collapsible.js" defer></script>
   </head>
 
   <body>
@@ -115,18 +117,32 @@
             colaborar com a equipe, corrigir bugs e, acima de tudo, aprender o máximo possível com os colegas de
             trabalho e os desafios do dia a dia.
           </p>
-          <p>
-            Neste semestre, tenho dedicado bastante tempo aos estudos de matemática, pois acredito que uma base sólida
-            será fundamental para lidar com os maiores desafios como desenvolvedor. Além disso, estou me aprofundando em
-            desenvolvimento web, uma área que me atrai tanto pelas coisas incríveis que dá para criar quanto pela
-            possibilidade de colocar em prática o que aprendo por meio de projetos visuais e interativos.
-          </p>
-          <h3>Curiosidade</h3>
-          <p>
-            Sou apaixonado por esportes — pratico basquete, escalada e ando de bicicleta pela orla (não sei se conta
-            como "ciclismo"😄). Quando o assunto é assistir, topo qualquer coisa: de
-            <abbr title="Mixed Martial Arts">MMA</abbr> e sumô até vôlei e pingue-pongue.
-          </p>
+          <div class="collapsible-container">
+            <button type="button" class="collapsible-btn">
+              <h3>Foco Atual</h3>
+            </button>
+            <div class="collapsible-content" hidden>
+              <p>
+                Neste semestre, tenho dedicado bastante tempo aos estudos de matemática, pois acredito que uma base
+                sólida será fundamental para lidar com os maiores desafios como desenvolvedor. Além disso, estou me
+                aprofundando em desenvolvimento web, uma área que me atrai tanto pelas coisas incríveis que dá para
+                criar quanto pela possibilidade de colocar em prática o que aprendo por meio de projetos visuais e
+                interativos.
+              </p>
+            </div>
+          </div>
+          <div class="collapsible-container">
+            <button type="button" class="collapsible-btn">
+              <h3>Curiosidade</h3>
+            </button>
+            <div class="collapsible-content" hidden>
+              <p>
+                Sou apaixonado por esportes — pratico basquete, escalada e ando de bicicleta pela orla (não sei se conta
+                como "ciclismo"😄). Quando o assunto é assistir, topo qualquer coisa: de
+                <abbr title="Mixed Martial Arts">MMA</abbr> e sumô até vôlei e pingue-pongue.
+              </p>
+            </div>
+          </div>
         </section>
 
         <section id="projetos" hidden>
