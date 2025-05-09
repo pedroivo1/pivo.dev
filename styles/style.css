@@ -1,6 +1,6 @@
 :root {
   --text-color-1: hsl(0, 0%, 5%);
-  --text-color-2: hsl(347, 100%, 55%);
+  --text-color-2: hsl(347, 90%, 55%);
   --a-color-link: hsl(210, 100%, 50%);
   --background-color: hsl(0, 0%, 90%, 0.7);
 }
@@ -137,7 +137,7 @@ a:active {
   color: var(--text-color-2);
 }
 
-a[target="_blank"]::after {
+a[target="_blank"]:not(".no-after")::after {
   content: "\00a0";
   display: inline-block;
   width: 0.75em;
