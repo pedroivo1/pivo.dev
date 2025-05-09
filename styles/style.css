@@ -2,7 +2,7 @@
   --text-color-1: hsl(0, 0%, 5%);
   --text-color-2: hsl(347, 90%, 55%);
   --a-color-link: hsl(210, 100%, 50%);
-  --background-color: hsl(0, 0%, 90%, 0.7);
+  --background-color: hsl(0, 0%, 90%, 0.75);
 }
 
 html {
@@ -57,8 +57,7 @@ nav > ul > li > a:focus {
 
 nav > ul > li > a:hover {
   text-decoration: none;
-  color: var(--text-color-2);
-  background-color: hsl(0, 0%, 90%);
+  background-color: hsl(0, 0%, 100%, 0.3);
   box-shadow: 1px 1px 3px 2px hsl(0, 0%, 15%);
 }
 
@@ -182,7 +181,7 @@ abbr:hover {
     text-align: center;
   }
 
-  a {
+  a, button {
     -webkit-tap-highlight-color: transparent;
   }
 
@@ -190,12 +189,8 @@ abbr:hover {
     color: var(--text-color-2);
   }
 
-  a:hover {
-    color: var(--text-color-2);
-  }
-
-  a:active {
-    color: var(--text-color-2);
+  nav > ul > li > a:focus {
+    color: var(--text-color-1);
   }
 
   abbr {

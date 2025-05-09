@@ -7,7 +7,7 @@
   border-radius: 16px;
   background-color: var(--background-color);
   box-shadow: 1px 1px 7px 2px hsl(0, 0%, 0%);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(2px);
 }
 
 .main-card > header {
@@ -107,9 +107,6 @@ li {
   }
 
   #my-image {
-    display: block;
-    float: unset;
-    width: 50vw;
-    margin: 0 auto;
+    width: 35vw;
   }
 }
