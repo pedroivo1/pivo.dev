@@ -30,7 +30,18 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
+ul, ol, menu {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 button {
-  all: unset;
+  color: inherit;
+  background-color: inherit;
+  border: none;
   cursor: pointer;
 }
