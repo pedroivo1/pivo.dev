@@ -23,6 +23,15 @@ body>header {
   will-change: transform;
 }
 
+.copy-link-btn {
+  background-color: #fafafa;
+  box-shadow: none;
+  width: 2rem;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
 #hero,
 #about,
 #projects,
