@@ -9,12 +9,12 @@
 .card-container {
   display: flex;
   flex: 1 1 100%;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   overflow-x: auto;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
-} 
+}
 
 .card-container::-webkit-scrollbar {
   display: none;
@@ -26,36 +26,32 @@
   width: 100%;
 }
 
-
 .pre-btn,
 .nxt-btn {
+  height: calc(95svh - var(--header-height));
   box-shadow: none;
-  border: none;
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
+  display: flex;
+  align-items: flex-end;
   z-index: 10;
   background-color: transparent;
 }
 
 .pre-btn {
   left: 0;
-  padding-left: 0.2rem;
 }
 
 .nxt-btn {
   right: 0;
-  padding-left: 0.2rem;
   transform: scaleX(-1);
 }
 
 .pre-btn svg,
 .nxt-btn svg {
   color: #000;
-  stroke-width: 4;
-  width: 1.5rem;
+  stroke-width: 3;
+  width: 1rem;
   height: auto;
   filter: drop-shadow(3px 2px 2px rgba(0, 0, 0, 0.9));
 }
