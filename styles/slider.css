@@ -1,85 +1,36 @@
+.slide {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  height: 100svh;
+  flex: 1 1 100%;
+}
+
 .card-container {
   display: flex;
   flex: 1 1 100%;
-  padding: 2.5rem;
   justify-content: center;
   align-items: center;
   overflow-x: auto;
-  gap: 1.5rem;
   scroll-behavior: smooth;
-}
+  scroll-snap-type: x mandatory;
+} 
 
 .card-container::-webkit-scrollbar {
   display: none;
 }
 
-.card {
+.main-card {
+  scroll-snap-align: start;
   flex: 0 0 auto;
-  width: 15rem;
-  height: 29rem;
-}
-
-.card-image-container {
-  position: relative;
-}
-
-.card-image {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
-.topic-tag {
-  position: absolute;
-  background: #fff;
-  padding: 0.3rem;
-  border-radius: 5px;
-  color: #ff7d7d;
-  right: 1rem;
-  top: 1rem;
-  text-transform: capitalize;
-  cursor: pointer;
-}
-
-.card-btn {
-  position: absolute;
-  bottom: 0.6rem;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 0.6rem;
-  width: 90%;
-  text-transform: capitalize;
-  border: none;
-  outline: none;
-  color: #fff;
-  background: #ff7d7d;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.card-info-container {
-  width: 100%;
-  height: 100px;
-  padding-top: 0.6rem;
-}
-
-.card-info-title {
-  text-transform: uppercase;
-}
-
-.card-info-description {
-  width: 100%;
-  height: 20px;
-  line-height: 20px;
-  opacity: 0.6;
-  text-transform: capitalize;
-  margin: 5px 0;
-}
 
 .pre-btn,
 .nxt-btn {
+  box-shadow: none;
   border: none;
-  height: 100%;
   position: absolute;
   display: flex;
   justify-content: center;

@@ -9,7 +9,7 @@ body>header {
   display: flex;
   justify-content: space-between;
   padding: 0.2rem 0.4rem;
-  z-index: 10;
+  z-index: 1000;
 }
 
 body>header>nav {

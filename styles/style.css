@@ -24,10 +24,10 @@ html {
 }
 
 body>header {
-  background-color: hsl(0 0% 0% / 0.1);
-  backdrop-filter: blur(0.5rem);
+  background-color: hsl(0 0% 100% / 0.3);
+  backdrop-filter: blur(0.3rem);
 
-  -webkit-backdrop-filter: blur(0.5rem);
+  -webkit-backdrop-filter: blur(0.3rem);
 }
 
 body>header>nav a {
