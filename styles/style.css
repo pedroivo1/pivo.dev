@@ -4,10 +4,6 @@
   --accent-color: hsl(340, 82%, 52%);
   --main-dark-color: hsl(0, 0%, 6%);
   --main-light-color: hsl(0, 0%, 98%);
-  --h-top-margin: 1lh;
-  --h-button-margin: 0.25lh;
-  --p-top-margin: 0.5lh;
-  --p-button-margin: 1lh;
   --shadow: 1px 1px 4px 1px hsl(0, 0%, 50%);
   --a-linked-color: hsl(208, 100%, 38%);
   --a-visited-color: hsl(271, 68%, 32%);
@@ -44,14 +40,13 @@ body>header>nav a:visited {
   color: var(--main-light-color);
 }
 
-h1 {
-  margin-bottom: var(--h-top-margin);
-}
-
-h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   font-weight: 700;
   color: var(--main-dark-color);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+
 }
 
 h1 {
@@ -83,10 +78,9 @@ p, li, pre, cite, code, span {
   font-style: normal;
   font-weight: 400;
   color: var(--main-dark-color);
-}
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 
-p {
-  margin: var(--p-top-margin) 0 var(--p-button-margin);
 }
 
 a {
@@ -106,10 +100,8 @@ a:hover {
 button {
   background-color: var(--main-dark-color);
   color: var(--main-light-color);
-  padding: 0.5rem;
   border-radius: 0.5rem;
   box-shadow: var(--shadow);
-  margin: 0.2rem;
   transition: var(--transition);
   will-change: transform;
 }
