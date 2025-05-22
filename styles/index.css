@@ -54,13 +54,12 @@ body>main>section{
   display: flex;
   flex-direction: column;
   padding: 0.4rem;
-  border: 1px solid var(--main-dark-color);
   border-radius: 1rem;
   box-shadow: var(--shadow);
 }
 
 #me {
   max-width: 70svw;
-  max-height: 40svh;
+  max-height: 38svh;
   height: auto;
 }
